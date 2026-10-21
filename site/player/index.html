@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legitti.com | Music Player</title>
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+  <link rel="stylesheet" href="../css/theme.css">
+  <script>
+  try{if(localStorage.getItem("legitti-theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}
+  </script>
+</head>
+<body oncontextmenu="return false" class="disable-select">
+   <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+			<a href="/"><img class="logo disable-select" src="../img/logo.avif" width="200"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fa-thin fa-circle-xmark fa-xl" style="color: #EDB246;"></i>
+        </div>
+        <li class="disable-select"><a href="/" style="font-size:18px;"><i class="fa-light fa-house-chimney  fa-lg" style="color: #EDB246;"></i> Home</a></li>
+        <li class="disable-select"><a href="https://blog.legitti.com" style="font-size:18px;"><i class="fa-light fa-blog fa-lg" style="color: #EDB246;"></i> Blog</a></li>
+      </ul>
+      <div class="icon menu-btn disable-select">
+        <i class="fa-light fa-bars fa-lg" style="color: #EDB246;"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="player disable-select">
+    <div class="details">
+      <div class="now-playing hide-mobile">PLAYING x OF y</div>
+      <div class="track-art "></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+    <div class="buttons">
+      <div class="prev-track disable-select" onclick="prevTrack()"><i class="fa-thin fa-step-backward fa-2x"></i></div>
+      <div class="playpause-track disable-select" onclick="playpauseTrack()"><i class="fa-thin fa-play-circle fa-5x"></i></div>
+      <div class="next-track disable-select" onclick="nextTrack()"><i class="fa-thin fa-step-forward fa-2x"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider disable-select" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <i class="fa-light fa-volume-up"></i>
+      <input type="range" min="1" max="100" value="99" class="volume_slider disable-select" onchange="setVolume()">
+    </div>
+  </div>
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  <script src="../js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+var titles = [
+  'Legitti - Too Legitti.',
+  'Legitti - More Than Legit.',
+  'Legitti - Taking the L.',
+  'Legitti - Seems Legitti.',
+  'Legitti - Keep It Real, Keep It Legitti.',
+  'Legitti - It’s Officially Legitti!',
+  'Legitti - The Seal of Real!',
+  'Legitti - When It’s Right, It’s Legitti.',
+  'Legitti - Certified Internet Energy.',
+  'Legitti - Legit Mode Activated.',
+  'Legitti - Too Smooth To Be Fake.',
+  'Legitti - Built Different.',
+  'Legitti - Peak Legitimacy.',
+  'Legitti - No Sketchy Business.',
+  'Legitti - Legit Since Page Load.',
+  'Legitti - Suspiciously Legit.',
+  'Legitti - Zero Fake Detected.',
+  'Legitti - Keeping It 100%.',
+  'Legitti - The Real Deal DLC.',
+  'Legitti - Ctrl + Alt + Legit.',
+  'Legitti - Freshly Approved.',
+  'Legitti - Not Your Average Website.',
+  'Legitti - Legitness Overloaded.',
+  'Legitti - Straight Outta Authenticity.',
+  'Legitti - Internet Gold Standard.',
+  'Legitti - The Officially Unofficial Vibe.',
+  'Legitti - Trust Me Bro™.',
+  'Legitti - The Legit Multiverse.',
+  'Legitti - Realer Than Reality.',
+  'Legitti - Elite Tier Legit.'
+]
+
+ var title = titles[Math.floor(Math.random() * titles.length)]
+ document.title = title

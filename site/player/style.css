@@ -1,0 +1,139 @@
+@font-face{
+	font-family: Quicksand;
+	@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+}
+
+body {
+  background-image: url("../img/header.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 25px;
+  width: min(250px, 70vw);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  background-image: url("../img/header.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1%;
+}
+
+.now-playing {
+  font-size: 0rem;
+  color: white;
+}
+
+.track-name {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+  color: #EDB246;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.playpause-track, .prev-track, .next-track {
+  padding: 25px;
+  opacity: 0.8;
+  color: white;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #EDB246;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #EDB246;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+  color: white;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+  color: white;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+  color: white;
+}
+
+.playpause-track i {
+  font-size: 5rem;
+}
+.prev-track i,
+.next-track i {
+  font-size: 2rem;
+}
+
+

@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color bg
+color gold
+color icon_background
+color muted
+color text
+drawable btn_gold
+drawable progress_gold
+drawable splash_icon
+id error
+id progress
+id retry
+id swipe
+id web
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+string downloading
+string offline_body
+string offline_title
+string retry
+style Theme.Legitti
+style Theme.Legitti.Splash

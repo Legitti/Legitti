@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.legitti.app-main-26:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/drawable_btn_gold.xml.flat",
+        "source": "com.legitti.app-main-26:/drawable/btn_gold.xml"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/drawable_progress_gold.xml.flat",
+        "source": "com.legitti.app-main-26:/drawable/progress_gold.xml"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.legitti.app-main-26:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/drawable_splash_icon.png.flat",
+        "source": "com.legitti.app-main-26:/drawable/splash_icon.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/layout_activity_main.xml.flat",
+        "source": "com.legitti.app-main-26:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.legitti.app-release-25:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.legitti.app-main-26:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

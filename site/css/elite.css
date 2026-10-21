@@ -1,0 +1,320 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            div {
+                display: block;
+                overflow: hidden;
+            }
+            
+            body {
+                margin: 0px;
+            }
+            
+            iframe {
+                width: 100%;
+                height: 100%;
+                outline: none;
+                border: none;
+                z-index: 1;
+            }
+            
+            .eliteAlert {
+                width: 800px;
+                font-family: Arial;
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                background-color: white;
+                padding: 20px;
+                z-index: 2;
+            }
+            
+            .eliteAlert > .alertTitle {
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            
+            .eliteAlert > .alertDesc {
+                font-size: 16px;
+            }
+            
+            .elitePlayer {
+                width: 400px;
+                position: fixed;
+                bottom: 0px;
+                right: 50px;
+                font-family: Arial;
+                background-color: white;
+                border-radius: 10px 10px 0px 0px;
+                box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            }
+            
+            .elitePlayer > .playerHeader {
+                width: 100%;
+                background-color: #2d2d2d;
+                color: white;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .elitePlayer > .playerHeader > .headerTitle {
+                font-size: 16px;
+                float: left;
+                margin-right: 10px;
+            }
+            
+            .elitePlayer > .playerHeader > .headerAction {
+                font-size: 14px;
+                float: right;
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color .25s ease-in-out;
+            }
+            
+            .elitePlayer > .playerHeader > .headerAction > i {
+                line-height: 40px;
+            }
+            
+            .elitePlayer > .playerHeader > .headerAction:hover {
+                background-color: #AF0F13;
+                transition: background-color .25s ease-in-out;
+            }
+            
+            .elitePlayer > .playerBody {
+                width: 100%;
+                color: white;
+                padding: 15px;
+                background-color: #AF0F13;
+                display: none;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .elitePlayer > .playerBody.bodyHidden {
+                display: none!important;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData {
+                color: white;
+            }
+            
+            .elitePlayer > .playerBody > .bodyTime {
+                text-align: right;
+                float: left;
+            }
+            
+            .elitePlayer > .playerBody > .bodyTime > div:nth-child(1) {
+                font-size: 18px;
+            }
+            
+            .elitePlayer > .playerBody > .bodyTime > div:nth-child(2) {
+                font-size: 14px;
+                color: #FFFFFF80;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData > .dataPlaying {
+                width: 100%;
+                font-size: 12px;
+                color: #FFFFFF80;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData > .dataTitle {
+                width: 100%;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData > .dataEpisode {
+                width: 100%;
+                font-size: 14px;
+                opacity: 0.8;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData > .dataDescription {
+                width: 100%;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData > .dataAuthor {
+                width: 100%;
+                font-size: 14px;
+            }
+            
+            .elitePlayer > .playerBody > .bodyData > .dataAuthor > span {
+                font-weight: bold;
+            }
+            
+            .elitePlayer > .playerActions {
+                color: white;
+                background-color: #6D0E10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .elitePlayer > .playerActions > .actionItem {
+                width: 50px;
+                height: 50px;
+                float: left;
+                text-align: center;
+                background-color: #6D0E10;
+                cursor: pointer;
+                transition: background-color .25s ease-in-out;
+            }
+            
+            .elitePlayer > .playerActions > .actionItem > i {
+                line-height: 50px;
+                font-size: 18px;
+            }
+            
+            .elitePlayer > .playerActions > .actionItem.mainItem > i {
+                line-height: 50px;
+                font-size: 24px;
+            }
+            
+            .elitePlayer > .playerActions > .actionGrid > .gridItem:hover,
+            .elitePlayer > .playerActions > .actionItem:hover {
+                background-color: #5F090B;
+                transition: background-color .25s ease-in-out;
+            }
+            
+            .elitePlayer > .playerList {
+                width: 100%;
+                min-height: 150px;
+                position: relative;
+            }
+            
+            .elitePlayer > .playerList > .listItem {
+                width: 100%;
+                padding: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                position: relative;
+                justify-content: space-between;
+                border-bottom: 1px solid #F3F4F5;
+                transition: background-color .25s ease-in-out, color .25s ease-in-out;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemProgress {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 40%;
+                height: 2px;
+                background-color: #003858;
+                display: none;
+            }
+            
+            .elitePlayer > .playerList > .listItem:last-child {
+                border-bottom: none;
+            }
+            
+            .elitePlayer > .playerList > .listItem.itemPlaying,
+            .elitePlayer > .playerList > .listItem:hover {
+                background-color: #F7F8FA;
+                color: #EA1D22;
+                transition: background-color .25s ease-in-out, color .25s ease-in-out;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemMeta {
+                float: left;
+                width: calc(100% - 120px);
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemMeta > .metaTitle {
+                font-size: 16px;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemMeta > .metaAuthor {
+                font-size: 14px;
+                opacity: 0.8;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemDuration {
+                float: left;
+                width: 70px;
+                text-align: center;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemAction {
+                float: left;
+                width: 35px;
+                height: 35px;
+                margin-left: 15px;
+                text-align: center;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemAction.actionHidden {
+                opacity: 0;
+            }
+            
+            .elitePlayer > .playerList > .listItem:hover > .itemAction {
+                opacity: 1;
+            }
+            
+            .elitePlayer > .playerList > .listItem > .itemAction > i {
+                line-height: 35px;
+                font-size: 14px;
+            }
+            
+            .elitePlayer > .playerList > .listItem.itemPlaying > .itemAction > i:nth-child(1) {
+                display: none;
+            }
+            
+            .elitePlayer > .playerList > .listItem:not(.itemPlaying) > .itemAction > i:nth-child(2) {
+                display: none;
+            }
+            
+            .elitePlayer > .playerList > .listOverlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 2;
+                background-color: #FFFFFFBF;
+            }
+            
+            .elitePlayer > .playerList > .listOverlay > .overlayLoader {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: auto;
+                border: 10px solid #EA1D2280;
+                border-top-color: #EA1D22;
+                -webkit-animation: loaderRotate 1s linear infinite;
+                -moz-animation: loaderRotate 1s linear infinite;
+                animation: loaderRotate 1s linear infinite;
+            }
+            
+            @-moz-keyframes loaderRotate {
+                100% {
+                    -moz-transform: rotate(360deg);
+                }
+            }
+            
+            @-webkit-keyframes loaderRotate {
+                100% {
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+            
+            @keyframes loaderRotate {
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+		

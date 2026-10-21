@@ -1,0 +1,283 @@
+/* Dark mode. Colors only — no size, position, or flow changes to the page. */
+
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle {
+  position: relative;
+  z-index: 5;
+  flex: none;
+  width: 0;
+  min-width: 0;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity 0.2s ease;
+}
+
+#theme-toggle.is-visible {
+  width: 40px;
+  min-width: 40px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  overflow: visible;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #theme-toggle:hover .icon-moon,
+  #theme-toggle:hover .icon-sun {
+    color: #fff;
+  }
+}
+
+#theme-toggle:focus-visible {
+  outline: 2px solid #edb246;
+  outline-offset: 3px;
+}
+
+#theme-toggle:active {
+  transform: scale(0.96);
+}
+
+#theme-toggle .theme-toggle-icon {
+  display: block;
+}
+
+#theme-toggle .icon-moon,
+#theme-toggle .icon-sun {
+  font-size: 18px;
+  line-height: 1;
+}
+
+#theme-toggle .icon-sun {
+  color: #fff;
+}
+
+#theme-toggle .icon-moon {
+  display: none;
+  color: #edb246;
+}
+
+html[data-theme="dark"] #theme-toggle .icon-sun {
+  display: none;
+}
+
+html[data-theme="dark"] #theme-toggle .icon-moon {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #theme-toggle,
+  #theme-toggle:active {
+    transition: none;
+    transform: none;
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+  background-color: #1e1e1e;
+  color: #e7e4de;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #f4f1ea;
+}
+
+html[data-theme="dark"] p {
+  color: #d5d1c8;
+}
+
+html[data-theme="dark"] .section-header {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+html[data-theme="dark"] .skills .section-header {
+  background-color: transparent;
+  color: #fff;
+}
+
+html[data-theme="dark"] .contact .section-header {
+  background-color: #232323;
+  color: #fff;
+}
+
+html[data-theme="dark"] .section-header i {
+  color: #fff;
+}
+
+html[data-theme="dark"] .statistics .stat i,
+html[data-theme="dark"] .statistics .stat:hover i {
+  color: #fff;
+}
+
+html[data-theme="dark"] .statistics .stat .title,
+html[data-theme="dark"] .statistics .stat:hover .title {
+  color: #fff;
+}
+
+html[data-theme="dark"] .statistics .stat .num {
+  color: #edb246;
+}
+
+html[data-theme="dark"] .skills .skill p {
+  color: #edb246;
+}
+
+html[data-theme="dark"] .skills .skill i {
+  color: #fff;
+}
+
+html[data-theme="dark"] .hr,
+html[data-theme="dark"] .contact .hr,
+html[data-theme="dark"] .skills .hr {
+  border-top-color: #edb246;
+}
+
+html[data-theme="dark"] #site-player .track-name,
+html[data-theme="dark"] #site-player .buttons,
+html[data-theme="dark"] #site-player .playpause-track,
+html[data-theme="dark"] #site-player .prev-track,
+html[data-theme="dark"] #site-player .next-track,
+html[data-theme="dark"] #site-player .current-time,
+html[data-theme="dark"] #site-player .total-duration,
+html[data-theme="dark"] #site-player .fa-volume-up,
+html[data-theme="dark"] #site-player .prev-track i,
+html[data-theme="dark"] #site-player .next-track i {
+  color: #fff;
+}
+
+html[data-theme="dark"] #site-player .seek_slider,
+html[data-theme="dark"] #site-player .volume_slider {
+  background: #4a4a4a;
+}
+
+html[data-theme="dark"] .header .job {
+  color: #edb246;
+}
+
+html[data-theme="dark"] .footer p {
+  color: #fff;
+}
+
+html[data-theme="dark"] .footer p i {
+  color: #edb246;
+}
+
+html[data-theme="dark"] .about .me {
+  border-right-color: #3a3a3a;
+}
+
+html[data-theme="dark"] .about .about-text h3 {
+  border-bottom-color: #edb246;
+}
+
+html[data-theme="dark"] .about .about-text p {
+  color: #ece8e0;
+}
+
+
+html[data-theme="dark"] blockquote {
+  background: #2a2a2a;
+  color: #ece8e0;
+  border-right-color: #4a4a4a;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="dark"] blockquote::before {
+  color: #8a8a8a;
+}
+
+html[data-theme="dark"] blockquote a {
+  background: #333;
+  color: #edb246;
+}
+
+html[data-theme="dark"] .projects .buttons button {
+  color: #ece8e0;
+}
+
+html[data-theme="dark"] .white-popup {
+  background-color: #2a2a2a;
+  color: #ece8e0;
+}
+
+html[data-theme="dark"] .white-popup h3 {
+  color: #f4f1ea;
+}
+
+html[data-theme="dark"] .white-popup h5,
+html[data-theme="dark"] .white-popup .desc {
+  color: #c8c3b8;
+}
+
+html[data-theme="dark"] .zaudio_playlist,
+html[data-theme="dark"] .zaudio_container,
+html[data-theme="dark"] .zaudio_wrapper {
+  background: #2a2a2a;
+  background-color: #2a2a2a;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] body.player-docked .white-popup {
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .zaudio_playlist li {
+  color: #ddd8ce;
+  border-bottom-color: #3a3a3a;
+}
+
+html[data-theme="dark"] .zaudio_playlist li:hover {
+  background-color: #353535;
+}
+
+html[data-theme="dark"] .zaudio_songtitle,
+html[data-theme="dark"] .zaudio_tracktime,
+html[data-theme="dark"] .zaudio_playercontrolbuttons {
+  color: #f0ece4;
+}
+
+html[data-theme="dark"] .zaudio_songartist {
+  color: #b9b3a6;
+}
+
+html[data-theme="dark"] .zaudio_art {
+  background-color: #333;
+}
+
+html[data-theme="dark"] .zaudio_seekbg {
+  background-color: #4a4a4a;
+}
+
+html[data-theme="dark"] .zaudio_playercontrolbuttons i:hover {
+  background-color: #3a3a3a;
+}
